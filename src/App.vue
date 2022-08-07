@@ -5,7 +5,9 @@
         <div class="w-1/5 h-full flex justify-center items-center">
           <img src="@assets/img/Logo.png" alt="logo" class="h-10">
         </div>
-        <div class="w-4/5 h-auto text-right">3</div>
+        <div class="w-4/5 h-auto text-right">
+          <Nav />
+        </div>
       </div>
       <div class="flex px-2 py-4 h-screen">
         <div class="w-1/5 px-4">
@@ -20,9 +22,10 @@
 </template>
 <script>
 import Menu from '@components/Menu.vue';
+import Nav from '@components/Nav.vue';
 
 export default {
-  components: { Menu },
+  components: { Menu, Nav },
   data() {
     return {
       menu: 'home',

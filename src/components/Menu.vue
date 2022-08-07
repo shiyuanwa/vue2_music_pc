@@ -29,12 +29,6 @@ export default {
       };
     },
   },
-  data() {
-    return {};
-  },
-  created() {
-    // console.log(this.value);
-  },
   methods: {
     onActive(tab) {
       this.$emit('input', tab.value);
