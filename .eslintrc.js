@@ -3,7 +3,7 @@ module.exports = {
   env: {
     node: true,
   },
-  extends: ['plugin:vue/essential', '@vue/airbnb'],
+  extends: ['plugin:vue/essential', ''],
   parserOptions: {
     parser: '@babel/eslint-parser',
     ecmaVersion: 2020,
@@ -14,5 +14,6 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'max-len': ['error', { code: 300 }],
     'vue/multi-word-component-names': 'off',
+    'linebreak-style': 'off',
   },
 };
